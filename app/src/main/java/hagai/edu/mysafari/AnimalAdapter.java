@@ -1,5 +1,6 @@
 package hagai.edu.mysafari;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -75,7 +76,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
                 int position =  getAdapterPosition();
                 AnimalItem animal =  data.get(position);
                 Toast.makeText(context, animal.getTitle() , Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(context, DetailsActivity.class);
+                Intent intent = new Intent(context, Activity.class);
 
                 intent.putExtra("animal", animal);
 
