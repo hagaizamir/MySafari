@@ -13,6 +13,22 @@ public class AnimalItem implements Parcelable {
     private final int thumbnailResId;
     private final  String text;
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getThumbnailResId() {
+        return thumbnailResId;
+    }
+
+    public String getText() {
+        return text;
+    }
+
     public AnimalItem(String title, String type, int thumbnailResId, String text) {
         this.title = title;
         this.type = type;
